@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cat Energy</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">
+            <svg class="main-header__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="191" height="38" viewBox="0 0 191 38">
+                <image id="logo-mobile-header.svg" width="191" height="38"
+                    xlink:href="data:img/png;base64,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" />
+            </svg>
+        </a>
+        <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="burger-menu burger-menu--closed burger-menu--nojs">
+            <ul class="burger-menu__list menu-list">
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Главная</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link"> Каталог продукции</a>
+                </li>
+                <li class="menu-list__item">
+                    <a href="#" class="menu-list__link">Подбор программы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="intro intro--inner-page">
+            <div class="intro__inner">
+                <h1 class="intro__title intro__heading--inner">
+                    Подбор программы
+                </h1>
+            </div>
+        </section>
+        <section class="order">
+            <p class="order__title">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+            <form action="https://echo.htmlacademy.ru" method="post" class="order-form">
+                <section class="order-form__fieldset">
+                    <ul class="order-form__list">
+                        <li class="order-form__item">
+                            <label class="order-form__label order-form__label--name" for="name">Имя:*</label>
+                            <input class="order-form__text order-form__text--name" type="text" name="name" id="name" placeholder="Барсик*"
+                                required="">
+                        </li>
+                        <li class="order-form__item">
+                            <label class="order-form__label order-form__label--weight" for="weight">Вес (кг):*</label>
+                            <input class="order-form__text order-form__text--weight" type="text" name="weight" id="weight" placeholder="7"
+                                required="">
+                        </li>
+                        <li class="order-form__item">
+                            <label class="order-form__label order-form__label--age" for="age">Возраст (лет):</label>
+                            <input class="order-form__text order-form__text--age" type="text" name="age" id="age" placeholder="7">
+                        </li>
+                    </ul>
+                </section>
+                <section class="order-form__fieldset order-form__fieldset--type">
+                    <ul class="order-form__list order-form__list--type">
+                        <li class="order-form__item order-form__item--radio">
+                            <input class="order-form__input visually-hidden" type="radio" name="type" value="1"
+                                id="type-1" checked="">
+                            <label class="order-form__label order-form__label--radio" for="type-1">Похудение</label>
+                        </li>
+                        <li class="order-form__item order-form__item--radio">
+                            <input class="order-form__input visually-hidden" type="radio" name="type" value="2"
+                                id="type-2">
+                            <label class="order-form__label order-form__label--radio" for="type-2">Набор массы</label>
+                        </li>
+                        <li class="order-form__item order-form__item--radio">
+                            <input class="order-form__input visually-hidden" type="radio" name="type" value="3"
+                                id="type-3">
+                            <label class="order-form__label order-form__label--radio" for="type-3">Не знаю (Нужен ваш
+                                совет)</label>
+                        </li>
+                    </ul>
+                </section>
+                <section class="order-form__fieldset order-form__fieldset--data-com">
+                    <h2 class="order-form__title">Контактные данные<br> (владельца кота)</h2>
+                    <ul class="order-form__list">
+                        <li class="order-form__item order-form__item--email">
+                            <label class="order-form__label order-form__label--name" for="name">E-mail:*</label>
+                            <input class="order-form__text" type="text" name="name" id="name"
+                                placeholder="Kuklachev@gmail.com" required="">
+                        </li>
+                        <li class="order-form__item order-form__item--tel">
+                            <label class="order-form__label order-form__label--weight" for="weight">Телефон:*</label>
+                            <input class="order-form__text" type="text" name="weight" id="weight"
+                                placeholder="8 (960) 900-60-90" required="">
+                        </li>
+                    </ul>
+                    <div class="order-form__item order-form__item--textarea">
+                        <label class="order-form__legend order-form__legend--comments" for="comments"></label>
+                        <textarea class="order-form__textarea" id="comments"
+                            placeholder="Расскажите обо всех повадках кота"></textarea>
+                    </div>
+                </section>
+                <section class="order-form__additionally">
+                    <h2 class="order-form__title">Дополнительно</h2>
+                    <ul class="order-form__list order-form__list--additionaly">
+                        <li class="order-form__item order-form__item--sugar order-form__item--checkbox">
+                            <input class="order-form__input visually-hidden" type="checkbox" name="sugar" value="1"
+                                id="sweetener" checked="">
+                            <label class="order-form__label order-form__label--checkbox"
+                                for="sweetener">Сахарозаменитель</label>
+                        </li>
+                        <li class="order-form__item order-form__item--water order-form__item--checkbox">
+                            <input class="order-form__input visually-hidden" type="checkbox" name="water" value="2"
+                                id="drinkingwater">
+                            <label class="order-form__label order-form__label--checkbox" for="drinkingwater">Питьевая
+                                вода</label>
+                        </li>
+                        <li class="order-form__item order-form__item--milk order-form__item--checkbox">
+                            <input class="order-form__input visually-hidden" type="checkbox" name="milk" value="3"
+                                id="milk">
+                            <label class="order-form__label order-form__label--checkbox" for="milk">Молоко</label>
+                        </li>
+                        <li class="order-form__item order-form__item--vitamins order-form__item--checkbox">
+                            <input class="order-form__input visually-hidden" type="checkbox" name="vitamins" value="4"
+                                id="vitamins">
+                            <label class="order-form__label order-form__label--checkbox" for="vitamins">Витамины</label>
+                        </li>
+                    </ul>
+                    <a href="#" class="order-form__link">Отправить заявку</a>
+                    <p class="order-form__note">*- Обязательные поля</p>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__inner">
+            <section class="contacts">
+                <div class="contacts__wrap">
+                    <h3 class="contacts__heading">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
+                    <P class="contacts__value">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</P>
+                </div>
+            </section>
+            <div class="page-footer__item-wrap">
+                <div class="page-footer__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6152511412683!2d30.32116901593964!3d59.938526269069975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1506962375066"
+                        width="320" height="455" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div class="page-footer__item footer-logo">
+                    <a href="index.html" class="footer-logo__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128"
+                            height="24" viewBox="0 0 128 24">
+                            <image id="footer-logo.svg" width="128" height="24"
+                                xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="page-footer__item social">
+                    <a class="social__item social__item--vk" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
+                            height="12" viewBox="0 0 22 12">
+                            <image id="m-vk.svg" width="22" height="12"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABtElEQVQ4jW3TS4iPYRQG8N9cUiQrl4UkFIWURiFFuZRcYkFWNkN/lzRN2SELl5QkidgIybgUK0IW2GChXJJoFgpJQ6MmlwxKb56Pj+apf/2/c973Oed9znOaGo3GKsxGi9/owSF8wUGsxfDkfuAeVqI3sXJ/qr8YgrutOIeHeIuvWIYx2IrVGIb5+Iih6MJCXMQ0nMeVGvEIdBbiq/iGNUnMw00cwAS8wmDcSr43XRXswqXaXSnYV4h3pONZuI87uIHDWIp3GOlffMJiLMGUWmZ9YjOa8RQno2tzDnSk880YhP7a5aY89zT2oDvxMqej2IDnFdH2PLsj3y9TvXQ9KcUrlOEewSPsTWwULqe5syXQmsT7kJ6I5t0ZSk8G+aRGvBGLcAo/E9sUjm3VoZa2trbqf+lqOho4g+/p/PF/+hZ3PIj16vJ04nPs+EfTCu2Z+IVoOxDGxaLttVxxzArsxr6BiPvi0cm4jYkDEO/E+OhcaVxwHQuwpfwqjet4g5lxyrMM5RpeZBvnxA3lXFmM0TiWXSgLdhz7ByIu+IDlmIt1cc3YDLvoXp7+OkUKUfF/hX50/QIg52g9AJAoQgAAAABJRU5ErkJggg==" />
+                        </svg>
+                        <span class="visually-hidden">Vk</span>
+                    </a>
+                    <a class="social__item social__item--instagram" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                            height="16" viewBox="0 0 16 16">
+                            <image id="m-insta.svg" width="16" height="16"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABN0lEQVQ4jZXTzSpFYRQG4IcOhZGplPyMzBm4BMUFoAzoDCUGrgExMCQjkqFDbsHANSg/yVjkTGk569Rp74289fV9e/W+62+v1VWv12EUO5hFv9/RxDW2cN+d4lu8YQaDf5zgvKdmtJaRL7Hya9wW+vCR3OPQ1jLtmRK1haG8X/I+wCom831Ty5ofC8I57GEiv++wiQv04gk9oe0uxWyJz7GLgTy7aQv+cpbxjVpJzj7WcdRha78jq6tOcjGDYYzhpOS2ZRvv6EulgzY+S5YfUHTwjAcsVdAXY3A6/sg3qnqwgbN8n+a9lL9toUiuctBIYjTsMG33aWtUOYjZHsFrwUmcaGq7tCJC04wexGKs/dCjEFaJA6G5jgxiq2IxYrajzuJUVkUO8TymwkHUN43tmO1/rPMUHr4Afsg/6brwmNYAAAAASUVORK5CYII=" />
+                        </svg>
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                    <a class="social__item social__item--facebook" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10"
+                            height="19" viewBox="0 0 10 19">
+                            <image id="m-fb.svg" width="10" height="19"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAA2klEQVQokdXSPUqDQRCH8V+CRJDgR6FoCuMN1F7EA6gQm5zAt/IIHsDO3MhCSyF+FLYKWtgJdiIYFmZgAxJs/Te7s/PszOzstJqmUWkT5zjCeu1oV/s+brGEE6xiBdvFOVeBF7jG0LSWa7CFYxxWyCUGySTYwwKewp7HGU7xnOABFgP4iXUtfB8ZvhhXeMMLunjHV9gjdLCRqfcyRajAW7Hfwbhuz0xlxBt8R+TXqPkhfJ2scTcOxtXFdnzAPj4TvJuR8jFf/uca/yNY+lfGqszklOp5LLr/NRwm7+kfHP7f0OcAAAAASUVORK5CYII=" />
+                        </svg>
+                        <span class="visually-hidden">Facebook</span>
+                    </a>
+                </div>
+                <div class="page-footer__item copyright">
+                    <p class="copyright__text">
+                        HTML Academy
+                    </p>
+                    <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27"
+                            height="34" viewBox="0 0 27 34">
+                            <image id="htmlacademy.svg" width="27" height="34"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAAClklEQVRIia1W3XnaQBAc++M9dBDcAa4gpALbHVgvvFpUAKoAXAG4AkgFViqADixXEKUC57tkloxWd5LIl3lCx+3Pzc3e7tV8PodgDGDKzym/PwOYcG2GNkquVADeAdQATlw78fs3RgBe6WzScjMMsQQ8QiLVKLHZZ/fTDLhWip0l+inCCnTPSBa+Ood9KHv+10QCe9BgQ4wvRSP5639w8AjgDcB9658eXBJsSjq2pGYv4vpvwcYMcKQoCgA3ADb8DqdcOUFE0Rcsp7NH3ukNHYd7WAC45fpS9iWRCjbjSdYsgwdRq+LE9Qfu25LaactjJNjYGRTM/tCybOLAUxe0O9JPg1oNtkpQVrdcp0WxYnI7UW0eC7bsoUyxFVV6BLtMfKxjwcqBlAV8Z+ZHniYG82fPXiPYjLUTvdwIFnRkSvRvrJXF2Z8G2zkVdtXNF+6xEgBFtZekX+mjMKPQzz7sNzeumU1NR7tWqD9P1R2pDPue+ernsmdH+/D/hz8ZhOeM36m6eaI4lMrc+cm8klNFfcfjb4RarZsXJtBHdwOpYBA6M2aqdXMQeocKKhnsWV6DLakyIYQkfjjaBmGU2LQkPQsqLxch2P8Xo+tkE7mnjDJf8j67Xpead9pCKthBetY9qfvGk3ZNYhvaxcqlEcyrqpaeZfJ+klMqrGQWkYf77FeDHRPNz3pWRsO9nKyWR/fUsvz7fp6DFTSadBQxSI1R20eZn1eC/+JaepC99l3vo1F71UHZWuYV0G/wvzIaq0gfy4fMFY4ybZaVjAwVImospb3XkckqBv+c1TKBNQbflPS1vcPdgVHr5xVw/22qoaaCwbV3U5pRtXUUq2KTBT9kSPU1FE4UghhlOj924pLx20vdl0I3APwCkLnOnTFCCwMAAAAASUVORK5CYII=" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

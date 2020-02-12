@@ -1,0 +1,36 @@
+.additional-products {
+    height: 117px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.additional-products__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.additional-products__table {
+    margin-bottom: 11px;
+    font-family: 'Arial';
+}
+
+.additional-products__wrap {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.additional-products__link {
+    background-color: rgb(104, 183, 56);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.additional-products__td {
+    text-align: end;
+}

@@ -1,0 +1,29 @@
+.additional-goods__title {
+    margin: 0;
+    font-size: 24px;
+    padding-left: 18px;
+    letter-spacing: -1.5px;
+    height: 52px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    margin-bottom: 13px;
+}
+
+.additional-goods__bg {
+    background-image: url(/img/gift-photo-mobile.jpg.png);
+    background-repeat: no-repeat;
+    height: 290px;
+    background-position: 21px 18px;
+    padding: 29px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.additional-goods__text {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Arial';
+}

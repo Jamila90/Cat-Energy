@@ -1,0 +1,30 @@
+{
+  "name": "cat-energy",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[DCat-energy\"",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "{"
+  },
+  "keywords": [
+    "\u001b"
+  ]
+}

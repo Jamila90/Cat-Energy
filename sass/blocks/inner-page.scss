@@ -1,0 +1,43 @@
+.inner-page--changing-page {
+    background-image: url(/img/index-background-mobile.png);
+    background-repeat: no-repeat;
+}
+
+.inner-page__heading {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 400;
+    padding-left: 0px;
+    padding-top: 29px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: white;
+    margin-bottom: 22px;
+}
+
+.inner-page__subtitle {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    padding-left: 60px;
+    letter-spacing: 0.3px;
+    margin-bottom: 26px;
+}
+
+.inner-page__img {
+    padding-left: 20px;
+}
+
+.inner-page__prog-link {
+    width: 280px;
+    margin-left: 20px;
+    background-color: rgb(104,183,56);
+    letter-spacing: -0.8px;
+}
+
+.inner-page__button {
+    margin-bottom: 22px;
+}
