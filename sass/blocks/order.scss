@@ -1,5 +1,10 @@
+.order-form {
+    margin-bottom: 39px;
+}
+
 .order-form__fieldset {
     margin-bottom: 25px;
+    padding: 0 20px;
 }
 
 .order__title {
@@ -13,14 +18,14 @@
 
 .order-form__list {
     margin: 0;
-    padding-left: 20px;
+    padding: 0;
 }
 
 .order-form__label {
     text-transform: uppercase;
     padding: 10px 0px;
     letter-spacing: 0.5px;
-    padding-right: 11px;
+    padding-right: 10px;
 }
 
 .order-form__text {
@@ -64,7 +69,8 @@
     position: relative;
 }
 
-.order-form__label--radio {
+.order-form__label--radio,
+.order-form__label--checkbox {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -83,6 +89,16 @@
     border-radius: 50%;
 }
 
+.order-form__label--checkbox::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+    border: 1px solid rgb(217, 217, 217);
+    cursor: pointer;
+}
+
 .order-form__input:checked~.order-form__label--radio::after {
     content: "";
     position: absolute;
@@ -95,6 +111,90 @@
     cursor: pointer;
 }
 
+.order-form__input:checked~.order-form__label--checkbox::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    width: 22px;
+    height: 16px;
+    background-image: url(/img/tick.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
 .order-form__list--type {
     padding-top: 22px;
+}
+
+.order-form__text--email {
+    width: 199px;
+}
+
+.order-form__text--tel {
+    width: 183px;
+}
+
+.order-form__title {
+    margin: 0;
+    padding-top: 5px;
+    letter-spacing: -0.2px;
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+
+.order-form__fieldset--data-com {
+    margin-bottom: 29px;
+    padding: 0 20px;
+}
+
+.order-form__fieldset--comments {
+    padding: 0 20px; 
+}
+
+.order-form__textarea {
+    min-height: 128px;
+    width: 258px;
+    border: 1px solid #d9d9d9;
+    resize: none;
+    font-size: 16px;
+    font-family: 'Oswald';
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+.order-form__additionally {
+    padding: 0 20px;
+}
+
+.order-form__title--additionally {
+    font-size: 24px;
+    margin-bottom: 35px;
+    padding-top: 2px;
+    letter-spacing: -1.5px;
+}
+
+.order-form__list--additionaly {
+    margin-bottom: 35px;
+}
+
+.order-form__item--sugar {
+    margin-bottom: 13px;
+}
+
+.order-form__item--water {
+    margin-bottom: 12px;
+}
+
+.order-form__item--milk {
+    margin-bottom: 12px;
+}
+
+.order-form__link {
+    background-color: rgb(104, 183, 56);
+    margin-bottom: 18px;
 }
