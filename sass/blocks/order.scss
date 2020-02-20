@@ -114,8 +114,8 @@
 .order-form__input:checked~.order-form__label--checkbox::after {
     content: "";
     position: absolute;
-    top: 12px;
-    left: 9px;
+    top: 6px;
+    left: 4px;
     width: 22px;
     height: 16px;
     background-image: url(/img/tick.svg);

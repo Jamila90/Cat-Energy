@@ -41,3 +41,56 @@
 .inner-page__button {
     margin-bottom: 22px;
 }
+
+@media (min-width: 768px) {
+
+    .inner-page--changing-page {
+        background-image: url(/img/index-can-tablet.jpg.png);
+        background-repeat: no-repeat;
+        width: 668px;
+        height: 864px;
+        background-position: -20px 257px;
+    }
+
+    .inner-page__img {
+        display: none;
+    }
+
+    .inner-page__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-left: 70px;
+    }
+
+    .inner-page__heading {
+        color: black;
+        font-size: 60px;
+        line-height: 61px;
+        padding-top: 56px;
+        letter-spacing: -2px;
+        text-align: left;
+        margin-bottom: 41px;
+    }
+
+    .inner-page__subtitle {
+        color: black;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -0.5px;
+        margin-bottom: 45px;
+    }
+
+.inner-page__prog-link {
+        padding-right: 0;
+        margin-left: 0;
+        width: 245px;
+        height: 22px;
+        font-size: 20px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        letter-spacing: -1px;
+    }
+
+} 

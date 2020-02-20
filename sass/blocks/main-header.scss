@@ -28,3 +28,45 @@
     background-repeat: no-repeat;
 }
 
+@media (min-width: 768px) {
+    .main-header {
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    .main-header {
+        width: 668px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: row;
+        height: 85px;
+    }
+
+    .main-header__logo {
+        padding-left: 0;
+        display: flex;
+        flex-grow: 1;
+        width: 173px;
+        height: 58px;
+        z-index: 1;
+    }
+
+    .main-header__toggle {
+        display: none;
+    }
+
+    .burger-menu__list {
+        display: flex;
+        font-size: 17px;
+        height: 63px;
+        width: 453px;
+        align-items: flex-end;
+    }
+
+    .menu-list__item {
+        border-top: none;
+        padding: 0;
+        padding-left: 28px;
+    }
+  }
