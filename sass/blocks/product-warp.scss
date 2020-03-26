@@ -1,0 +1,23 @@
+.product-wrap {
+    border: 1px solid rgb(217, 217, 217);
+    margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+
+    .product-wrap  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 708px;
+        justify-content: space-between;
+        border: none;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .product-wrap  {
+        width: 1300px;
+    }
+}

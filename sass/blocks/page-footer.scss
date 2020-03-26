@@ -13,6 +13,16 @@
 
 .footer-logo__link {
     padding-left: 96px;
+    cursor: pointer;
+
+      &:hover,
+      &:focus {
+          opacity: 0.8;
+      }
+
+      &:active {
+          opacity: 0.6;
+      }
 }
 
 .page-footer__map {
@@ -29,9 +39,37 @@
     border-bottom: 1px solid rgb(217, 217, 217);
 }
 
+.social__img {
+    fill: rgb(102, 102, 102);
+    &:hover,
+    &:focus {
+        fill: rgb(104, 183, 56);
+    }
+
+    &:active {
+        fill: rgb(104, 183, 56);
+        opacity: 0.3;
+    }
+}
+
 .social__item--instagram {
     padding-right: 35px;
     padding-left: 40px;
+}
+
+.social__img--fb {
+    width: 10px;
+    height: 19px;
+}
+
+.social__img--insta {
+    width: 16px;
+    height: 16px;
+}
+
+.social__img--vk {
+    width: 22px;
+    height: 12px;
 }
 
 .copyright {
@@ -39,6 +77,10 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
+
+    &:active {
+        opacity: 0.3;
+    }
 }
 
 .copyright__text {
@@ -51,14 +93,101 @@
 .copyright__logo {
     padding-right: 20px;
     padding-top: 3px;
+    fill: rgb(102, 102, 102);
+
+    &:hover,
+    &:focus {
+        fill: rgb(104, 183, 56);
+    }
+}
+
+iframe {
+    height: 360px;
 }
 
 @media (min-width: 768px) {
     .page-footer {
-      width: 668px;
+      width: 708px;
       margin: 0 auto;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .page-footer__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .social {
+        border: 0;
+        padding: 0;
+    }
+
+    .social__img--vk {
+        width: 30px;
+        height: 16px;
+    }
+
+    .social__img--insta {
+        width: 23px;
+        height: 23px;
+    }
+
+    .social__img--fb {
+        width: 14px;
+        height: 28px;
+    }
+
+    .copyright__text {
+        padding-right: 19px;
+        padding-left: 0;
+    }
+
+    .copyright__logo {
+        padding: 0;
+    }
+
+    iframe {
+        width: 708px;
+        height: 400px;
+    }
+
+    .footer-logo {
+        margin: 0;
+    }
+
+    .footer-logo__link {
+        padding: 0;
     }
 
 } 
+
+@media (min-width: 1440px) {
+    .page-footer {
+      width: 1300px;
+      margin: 0 auto;
+      position: relative;
+  }
+
+  .footer-logo {
+      padding-left: 40px;
+  }
+
+  .copyright {
+      padding-right: 43px;
+  }
+
+  .social {
+      padding-left: 20px;
+  }
+
+  .social__item--instagram {
+    padding-right: 30px;
+    padding-left: 23px;
+  }
+
+  iframe {
+      width: 1300px;
+  }
+}

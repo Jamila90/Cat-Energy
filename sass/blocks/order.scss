@@ -36,7 +36,67 @@
     padding-left: 13px;
     font-size: 16px;
     font-family: 'Oswald';
+     
 }
+.order-form__item input[type="text"],
+.order-form__textarea {
+    border: 1px solid rgb(230, 230, 230);
+
+    &:hover,
+    &:focus {
+        border: 1px solid rgb(205, 205, 205);
+    }
+    &:active {
+        border: 1px solid rgb(68, 68, 68);
+    }
+}
+
+.order-form__label--radio {
+    border-color: 1px solid rgb(230, 230, 230);
+
+    &:hover::before,
+    &:focus::before {
+        border: 1px solid rgb(205, 205, 205);
+    }
+    &:active::before {
+        opacity: 0.3;
+    }
+}
+
+.order-form__label--checkbox {
+    border-color: 1px solid rgb(230, 230, 230);
+
+    &:hover::before,
+    &:focus::before {
+        border: 1px solid rgb(205, 205, 205);
+    }
+    &:active::before {
+        opacity: 0.3;
+    }
+}
+
+.order-form__icon {
+    position: absolute;
+}
+
+input.order-form__text:focus+ svg.order-form__icon {
+        fill: rgb(104, 183, 56);
+}
+
+.order-form__icon--tel {
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 13px;
+}
+
+.order-form__icon--email {
+    width: 17px;
+    height: 13px;
+    top: 16px;
+    right: 16px;
+}
+
 
 .order-form__text--name {
     width: 211px;
@@ -51,6 +111,7 @@
 }
 
 .order-form__item {
+    position: relative;
     margin-bottom: 16px;
 }
 
@@ -84,7 +145,7 @@
     width: 28px;
     height: 28px;
     margin-right: 16px;
-    border: 1px solid rgb(217, 217, 217);
+    border: 1px solid rgb(230, 230, 230);
     cursor: pointer;
     border-radius: 50%;
 }
@@ -95,7 +156,7 @@
     width: 28px;
     height: 28px;
     margin-right: 16px;
-    border: 1px solid rgb(217, 217, 217);
+    border: 1px solid rgb(230, 230, 230);
     cursor: pointer;
 }
 
@@ -156,7 +217,7 @@
 .order-form__textarea {
     min-height: 128px;
     width: 258px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid rgb(230, 230, 230);
     resize: none;
     font-size: 16px;
     font-family: 'Oswald';
@@ -197,4 +258,341 @@
 .order-form__link {
     background-color: rgb(104, 183, 56);
     margin-bottom: 18px;
+}
+
+.order-form__br {
+    display: block;
+}
+
+@media (min-width: 768px) {
+
+    .order-form {
+        margin-bottom: 52px;
+    }
+
+    .order__title {
+        font-size: 20px;
+        padding-left: 40px;
+        padding-top: 8px;
+        line-height: 27px;
+        margin-bottom: 60px;
+    }
+
+    .order-form__title {
+        font-size: 36px;
+        padding-top: 12px;
+        padding-left: 15px;
+        letter-spacing: -2.4px;
+    }
+
+    .order-form__item {
+        padding-top: 10px;
+    }
+    
+    .order-form__label {
+        font-size: 20px;
+        padding: 0px 11px 0px 20px;
+    }
+
+    .order-form__text {
+        font-size: 20px;
+        width: 548px;
+    }
+
+    .order-form__label--weight {
+        padding: 0 8px 0 20px;
+    }
+
+    .order-form__text--weight {
+        width: 519px;
+    }
+
+    .order-form__text--age {
+        width: 479px;
+    }
+
+    .order-form__label--age {
+        padding: 0 2px 0 20px;
+    }
+
+    .order-form__fieldset {
+        margin-bottom: 74px;
+    }
+
+    .order-form__fieldset--type {
+        height: 194px;
+        padding: 0;
+        border-right: none;
+    }
+
+    .order-form__list--type {
+        padding-top: 14px;
+        width: 666px;
+        margin-left: 41px;
+        border: 1px solid rgb(230, 230, 230);
+        border-right: none;
+        padding-right: 0;
+        height: 180px;
+    }
+
+    .order-form__item--radio {
+        margin-bottom: 3px;
+    }
+
+    .order-form__label--radio {
+        padding: 0px 0px 0px 27px;
+    }
+
+    .order-form__label--radio::before {
+        width: 38px;
+        height: 38px;
+        margin-right: 18px;
+    }
+
+    .order-form__input:checked ~ .order-form__label--radio::after {
+        top: 10.5px;
+        left: 37.5px;
+        width: 19px;
+        height: 19px;
+    }
+
+    .order-form__br {
+        display: none;
+    }
+
+    .order-form__icon--email {
+        top: 66px;
+        right: 36px;
+    }
+
+    .order-form__icon--tel {
+        top: 22px;
+        right: 33px;
+    }
+
+    .order-form__item--email {
+        padding-top: 49px;
+        margin-bottom: 16px;
+    }
+
+    .order-form__text--email {
+        width: 530px;
+    }
+
+    .order-form__text--tel {
+        width: 508px;
+    }
+
+    .order-form__item--tel {
+        margin-bottom: 0;
+    }
+
+    .order-form__fieldset--data-com {
+        margin-bottom: 63px;
+    }
+
+    .order-form__item--textarea {
+        padding-top: 0;
+    }
+
+    .order-form__textarea {
+        width: 609px;
+        height: 152px;
+        border: 1px solid rgb(230, 230, 230);
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .order-form__title--comments {
+        margin-bottom: 83px;
+    }
+
+    .order-form__item--textarea {
+        padding-top: 0;
+    }
+
+    .order-form__fieldset--comments {
+        margin-bottom: 58px;
+    }
+
+    .order-form__title--additionally {
+        margin-bottom: 53px;
+    }
+
+    .order-form__list--additionaly {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 39px;
+    }
+
+    .order-form__item--sugar {
+        padding-top: 11px;
+        padding-right: 97px;
+        margin-bottom: 22px;
+    }
+
+    .order-form__label--checkbox {
+        letter-spacing: -0.5px;
+    }
+    
+    .order-form__label--checkbox::before {
+        width: 38px;
+        height: 38px;
+    }
+
+    .order-form__input:checked ~ .order-form__label--checkbox::after {
+        top: 11px;
+        left: 29px;
+    }
+
+    .order-form__item--milk {
+        padding-right: 189px;
+    }
+
+    .order-form__link {
+        height: 24px;
+        width: 283px;
+        font-size: 20px;
+        margin-left: 20px;
+        padding-bottom: 12px;
+        padding-top: 14px;
+        font-weight: 300;    
+    }
+
+    .order-form__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .order-form__note {
+        width: 293px;
+        margin: 0;
+        text-align: center;
+        font-size: 16px;
+        padding-top: 13px;
+        padding-right: 60px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .order__title {
+        margin-bottom: 61px;
+    }
+
+    .order-form {
+        margin-bottom: 0;
+    }
+
+    .order-form__wrapper {
+        display: flex;
+        height: 268px;
+    }
+
+    .order-form__fieldset {
+        margin-bottom: 0;
+        padding-right: 0;
+        margin-right: 80px;
+    }
+
+    .order-form__fieldset--type {
+        width: 570px;
+        margin: 0;
+        height: 200px;
+        border: 1px solid rgb(230, 230, 230);
+    }
+
+    .order-form__fieldset--data-com {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .order-form__fieldset--comments {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .order-form__list--type {
+        margin: 0;
+        width: 570px;
+        padding-top: 22px;
+    }
+
+    .order-form__label--radio {
+        letter-spacing: -0.5px;
+    }
+
+    .order-form__list {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        border: none;
+    }
+
+    .order-form__list--additionaly {
+        flex-direction: row;
+        margin-bottom: 62px;
+    }
+
+    .order-form__list--contacts {
+        flex-direction: row;
+    }
+
+    .order-form__text--name {
+        width: 486px;
+    }
+
+    .order-form__text--weight {
+        width: 457px;
+    }
+
+    .order-form__text--age {
+        width: 417px;
+    }
+
+    .order-form__item--email {
+        margin-right: 52px;
+    }
+
+    .order-form__text--email {
+        width: 469px;
+    }
+
+    .order-form__text--tel {
+        width: 453px;
+    }
+
+    .order-form__textarea {
+        width: 1200px;
+    }
+
+    .order-form__item--sugar {
+        padding-right: 0;
+        margin-right: 78px;
+        margin-bottom: 0;
+    }
+
+    .order-form__item--water {
+        margin-right: 111px;
+        margin-bottom: 0;
+    }
+
+    .order-form__item--milk {
+        padding-right: 0;
+        margin-right: 170px;
+        margin-bottom: 0;
+    }
+
+    .order-form__item--vitamins  {
+        margin-bottom: 0;
+    }
+
+    .order-form__link  {
+        width: 570px;
+    }
+
+    .order-form__wrap {
+        justify-content: end;
+    }
 }

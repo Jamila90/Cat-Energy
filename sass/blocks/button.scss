@@ -9,5 +9,13 @@
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
-}
 
+  &:hover,
+  &:focus {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
+}

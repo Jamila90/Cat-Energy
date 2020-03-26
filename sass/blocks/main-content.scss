@@ -5,10 +5,16 @@
 
 @media (min-width: 768px) {
     .main-content {
-      width: 668px;
+      width: 708px;
       margin: 0 auto;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
+}
 
-} 
+@media (min-width: 1440px) {
+    .main-content {
+      width: 1300px;
+      margin: 0 auto;
+  }
+}

@@ -34,3 +34,103 @@
 .additional-products__td {
     text-align: end;
 }
+
+.additional-products__tr2 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .additional-products {
+        height: 138px;
+        margin: 0;
+    }
+
+    .additional-products__wrap {
+        padding-left: 38px;
+        flex-direction: row;
+        width: 634px;
+        align-items: baseline;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    .additional-products__wrapper {
+        border: 1px solid rgb(217, 217, 217);
+        border-bottom: none;
+    }
+
+    .additional-products__title {
+        font-size: 20px;
+        letter-spacing: -1.5px;
+        padding-top: 28px;
+        margin-bottom: 0;
+    }
+
+    .additional-products__table {
+        width: 230px;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .additional-products__table--water {
+        width: 163px;
+    }
+
+    .additional-products__table--milk {
+        width: 145px;
+    }
+
+    .additional-products__table--vit {
+        width: 220px;
+    }
+
+    .additional-products__tr2 {
+        display: block;
+      }
+
+      .additional-products__tr1 {
+        display: none;
+      }
+
+      .additional-products__td {
+        width: 93px;
+      }
+
+      .additional-products__link {
+        margin-left: 38px;
+        margin-right: 37px;
+      }
+}
+
+@media(min-width: 1440px) {
+    .additional-products__wrapper {
+        width: 895px;
+    }
+
+    .additional-products {
+        display: flex;
+    align-items: baseline;
+    height: 75px;
+    }
+
+    .additional-products__table {
+        width: 285px;
+    }
+
+    .additional-products__link {
+        width: 250px;
+        margin-right: 0px;
+    }
+
+    .additional-products__td {
+        width: 150px;
+    }
+
+    .additional-products__td--50 {
+        width: 205px;
+    }
+
+    .additional-products__td--100 {
+        width: 232px;
+    }
+}

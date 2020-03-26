@@ -12,23 +12,24 @@
     <header class="main-header">
         <a href="#" class="main-header__logo">
             <picture>
-                <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
-                <img src="/img/logo-mobile-header.svg" alt="" class="main-header__img">
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile-header.svg" alt="" class="main-header__img">
             </picture>
         </a>
         <button class="main-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="burger-menu burger-menu--closed burger-menu--nojs">
+        <nav class="burger-menu burger-menu--nojs">
             <ul class="burger-menu__list menu-list">
                 <li class="menu-list__item">
                     <a href="#" class="menu-list__link">Главная</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#" class="menu-list__link"> Каталог продукции</a>
+                    <a href="catalog.html" class="menu-list__link"> Каталог продукции</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">Подбор программы</a>
+                    <a href="form.html" class="menu-list__link">Подбор программы</a>
                 </li>
             </ul>
         </nav>
@@ -48,49 +49,46 @@
             <div class="categories__warp">
                 <div class="categories categories-slim">
                     <div class="categories-slim__text">
-                        <svg class="categories-slim__svg" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="53" viewBox="0 0 50 53">
-                            <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="50" height="53"
-                                xlink:href="data:img/png;base64,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" />
-                        </svg>
+                        <picture>
+                            <source media="(min-width: 1300px)" srcset="img/cat-slim-desktop.svg">
+                            <source media="(min-width: 768px)" srcset="img/cat-slim-tablet.svg">
+                            <img src="img/cat-slim-mobile.svg" alt="" class="categories-slim__svg">
+                        </picture>
                         <h2 class="categories-slim__heading">Похудение</h2>
-                        <p class="categories-slim__description">Ваш кот весит больше собаки и<br> почти утратил
-                            способность
-                            лазить<br>
-                            по деревьям? Пора на диету! Cat<br> Energy Slim поможет вашему<br> питомцу сбросить лишний
+                        <p class="categories-slim__description">Ваш кот весит больше собаки и<br
+                                class="categories__word-wrap1"> почти утратил<br class="categories__word-wrap2">
+                            способность<br class="categories__word-wrap3">
+                            лазить<br class="categories__word-wrap1">
+                            по деревьям? Пора на диету!<br class="categories__word-wrap2"> Cat<br
+                                class="categories__word-wrap1"> Energy Slim поможет<br class="categories__word-wrap3">
+                            вашему<br class="categories__word-wrap1"> питомцу<br class="categories__word-wrap2">
+                            сбросить
+                            лишний
                             вес.
                         </p>
                     </div>
                     <div class="categories-slim__ref">
                         <a href="#" class="categories-slim__link">Каталог Slim</a>
-                        <svg class="categories-slim__arrow" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="11" viewBox="0 0 24 11">
-                            <image id="right-arrow-long.svg" width="24" height="11"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAALCAYAAABlNU3NAAAAtUlEQVQ4jbWRPw4BYRBH36LgBjrZ0gXoRjInUChEI1xAq8MNHIEGhTN8ie24xEYhcQOikin8yWYVktnXzZfM730zU8YBUZ024vhxTtNLNq3kIQDqwEFU+0UJjCqwFdW5qEZFCF7MgI2o1qyORHXlENoCmpm3I9CtAEMHQR5tYG+CtUNY3gQnoBf9aPgLUV0Ck6+eHTBOQrgVceQFMLBwK2xFXtyBURKC/f6Nl+AKdJIQbO8fgCe44CWGVIdbRQAAAABJRU5ErkJggg==" />
-                        </svg>
                     </div>
                 </div>
                 <div class="categories categories-pro">
                     <div class="categories-pro__text">
-                        <svg class="categories-pro__svg" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="50" viewBox="0 0 67 50">
-                            <image id="Vector_Smart_Object_copy_2" data-name="Vector Smart Object copy 2" width="67"
-                                height="50"
-                                xlink:href="data:img/png;base64,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" />
-                        </svg>
+                        <picture>
+                            <source media="(min-width: 1300px)" srcset="img/cat-pro-desktop.svg">
+                            <source media="(min-width: 768px)" srcset="img/cat-pro-tablet.svg">
+                            <img src="img/cat-pro-mobile.svg" alt="" class="categories-pro__svg">
+                        </picture>
                         <h2 class="categories-pro__heading">Набор массы</h2>
-                        <p class="categories-pro__description">Заработать авторитет среди<br> дворовых котов и даже
-                            собак?<br>
+                        <p class="categories-pro__description">Заработать авторитет среди<br
+                                class="categories__word-wrap1"> дворовых котов<br class="categories__word-wrap2"> и даже
+                            собак?<br class="categories__word-wrap1">
                             Серия Cat
-                            Energy Pro поможет<br> вашему коту нарастить<br> необходимые мышцы!</p>
+                            Energy Pro поможет<br class="categories__word-wrap1"> <br
+                                class="categories__word-wrap2">вашему коту нарастить<br class="categories__word-wrap1">
+                            необходимые <br class="categories__word-wrap2"> мышцы!</p>
                     </div>
                     <div class="categories-pro__ref">
                         <a href="#" class="categories-pro__link">Каталог Pro</a>
-                        <svg class="categories-pro__arrow" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="11" viewBox="0 0 24 11">
-                            <image id="right-arrow-long.svg" width="24" height="11"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAALCAYAAABlNU3NAAAAtUlEQVQ4jbWRPw4BYRBH36LgBjrZ0gXoRjInUChEI1xAq8MNHIEGhTN8ie24xEYhcQOikin8yWYVktnXzZfM730zU8YBUZ024vhxTtNLNq3kIQDqwEFU+0UJjCqwFdW5qEZFCF7MgI2o1qyORHXlENoCmpm3I9CtAEMHQR5tYG+CtUNY3gQnoBf9aPgLUV0Ck6+eHTBOQrgVceQFMLBwK2xFXtyBURKC/f6Nl+AKdJIQbO8fgCe44CWGVIdbRQAAAABJRU5ErkJggg==" />
-                        </svg>
                     </div>
                 </div>
             </div>
@@ -99,43 +97,41 @@
             <h2 class="advantages__heading">Как это работает</h2>
             <div class="advantages__wrap">
                 <div class="advantages__blok1">
-                    <svg class="advantages__svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
-                        <image id="advantage-1.png" width="60" height="60"
-                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAFMElEQVRoge2aaUxcVRTH/29gNoZlGGDYSltaSaWkLG3FBhvU2MTGVBONMWn6Qa1LbWKMmmisRmv90DYl+qGmGmtSja02TYMa/EBrNBStVUooIAPSBWQrMOzbwAyzmXNgxsLQdip3kDzePyH3zXtv7pzfe/dsN0gvlW7yYglJtZRgoQAvASnAcpcCLHcpwHKXAix3KcBylwIsd4X/33y6cAPuis1FRmwOkiLTYVBHQxOm479wlRph0pSJA3Yriv54Yd6/t+DABJKbeD/yU7bCpDPDoI5BpCYWKunWi80LMfsUCwa8yrgO2zKeR5JhBWK0CQGATrcDE64xONx2OFzj8MDD99IDGpscwtnmr4TYEXLgDFMunrz7VZgj0qALj/CftzmHMeIYQP9EF5oGa9HQVwGrrQ0O9wRf35H1FpZHr4HH60ZZ62mUtxULsSdkwOSbz2a/z8D68Eg+Z3fZ0D/RjRrrOVzo+IH9ci6ppDCsidvIV7rGWlDa9IUwu0ICnBq1GrvyDiIhYhl/HneOomP0KoobP0bbSONtv58Znw+TPpGPL3aeEea/CAXwiphM7F5/CDHaeHi9HnTbWnHcsh9/D1mCnqMgdRtH5xFHP35t/16ofUKBY3WJ2JV3gGEpCNX1/oZjtXvh9rruaJ44fTKPQ44+DmQiJQxYgsRvlqCdnklUdJ7B1/UH/9NclItJI44+obAQWWk9uPIpJEem8/G1geqbwmrD9Ni9vgjvbf4GiYblAdcjNUYOeKRuW5so8/wSAkxvtzDtCa6MKM0crXlnzvvogewp+BLZ5s18fE/ywwH3RGlMUIdp+bhztEmEeTMkZEmvjb8XJn0SH1dbyzj9zFaGKQ87s/fBqEvgK91jLfil/duA+yI1MbwKSEP2XhHmzZAQ4IJlj0Kt0mDY0YezzccDrmfG5WNnzj5eruTfjf2V+Lz6bT6eLV3YVHHi8Xpgdwc+uPlKCHB8RAqP9EaoDLxRVFI+nf0uw1IVVXG9FCcbim46l14dxaPb44TTHfhAFgWwL8jYnCMzzlN6ei7nAx4JlnJqcePhW85l1Mbz6PI4hackiApaatVUkKHa2D+xpMLLGz5i36Z6uKrr59vCkow6M49Oj4PrbdESAuwr/Vw3+OT2tW9yiUlqGqzDCcv+oObypTZaEXbX+OIE9ili2v/SjVnIS3oAkqRC7/h1fHrpjaDqYVoVcdPRfnRyUKRp//6GiEkm3XYeyZcJckfWHm7syQdP1h8K2hc3pT7iT2+W3t9FmBYgIcATzikgisRbVm73V1CX+6vwV//FoOag3Lt11TPcNAzarShrPSXCtAAJAR5yTBUIURojCtMe54pr0N6DE5YDQX2fYF/LP4KEiFTusKqt50LivxAFXD+9/Cj9UKdD/lrV/VNQUZYafSo3qa0ktU/3zaGSkDxcYy3HYxkvIlobx5/7JjpRcvXonPfSbobZkIaNSVuQYy7kosWXxzvHmnG48hVOY4samN4kLWEfMO1PUaX0ev4niNKa+BwtVYKlTTl9uMEPiekYcGXgEo79udcfAEMlYf2wz1Cqp0uufMbwKVGr/b3tbNEDoAa/d7wD310+gpbhhpCC+iQEmNq5uOl6usfWPuW7TqCy60feeZSggiRJXJhQyUgbeXU957mJ8O1SLpSEAG9IegixOjMHq/MdJf7zpxo+XFCYYCQkSq9LuI83AahbqrWWh9zo+UgIsKX3AvvutcHaBV+idyrln0vlLgVY7lKA5S4FWO5SgOUuBVjuUoDlrqUFDOAfUZTeY7IuHh4AAAAASUVORK5CYII=" />
-                    </svg>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/advantage-tablet-1.svg">
+                        <img src="img/advantage-mobile-1.svg" alt="" class="advantages__svg">
+                    </picture>
                     <p class="advantages__descript1">Функциональное питание<br> содержит только полезные<br> питательные
                         вещества.
                     </p>
                 </div>
                 <div class="advantages__blok2">
-                    <svg class="advantages__svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
-                        <image id="andvantage-2.png" width="60" height="60"
-                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAFF0lEQVRoge2aCWxUVRSG//dm6axtp8t0m9KFrrQiNLaSQg1qKGqCBIjYiI3EGGOJNgqSiolJE8FoEGMTcUm0BBWFqKlRgoqSsAmxRaC0xZoWnS60HbpM15nO1mfuNZUSOxPtu8+a1/clk85LXu85/13OPedkuKe+WSFgAcEvJLFQBC8AFMFyRxEsdxTBckcRLHcWnGC11AZWJN2P0rRy6NUmeAJuXOj9Hkfb35fabFAkFbzUugqbc7aD51UYnuyHSRuJ0vRyTAlTOHatVkrTQZF0S69NfwwqXo26X/ej+szDeO/SC/D4XShKXCul2ZBIKlivNmDUM4hTnV/Q57ahSxh090KvNkKjCpPSdFAkFewNeOg2zoxaRp8jdbGICIuBJzAJX8AjpemgSHqGG3qPY31WBZ5YtgcDrh5YiGBdDM51fy2l2ZBIusIn7IdxtutLCMIUksOzoOI1uOw4hU9b9kppNiSielqbc7eD4zgcubov5Hs6tQExhiQ43Tcw4RuZk61H83fRiTvU8tocvf0TUStcEH83lsetRphKH/K9Sb8L3aNtcxarUxuRH1uMpdaSOXp6E1FnmON4OuvknkVgbmPYzJl04uKMKfS5e6wN9T3f0Wh+0w43/UWMuxTJM61g3Ba7kga0GEPiLTukIP4erEndAoerk571ztFWpnaZCSbXzZjXiSkh9FJz4FCWtxNFCaV0q457h+GY6IDbN06TFJMmEtH6BKRGLEFlYQ3OdNXh+O8fs3KTjeDbrSV4KOc5DLivY/+FHRj1Ds36HhG4reB1pFvyIQgCWgcbcLDpZZp2ziQnuhCbsp9Bojkd96aUoXfczsJNCpNraczjhAABi8JzUFVciwczn7xlm5LCYU3aFuwqPkCTEF/AS1eupqHyb2IJZCJeOb8VP/V8izHfMEY8AyzcpDBZ4d9GmvFR8x56TUXp4nDf4q0otq2DNzBJJ0KnMsCstdAgR5w/1l6L0111IcckwfDDpt30u15jYuEmhdkZbnScRvtQI8qWPI/UiFyYtBZ6rgn+KR+ckzfQMdqKwy17g275/wKmUZrcsx80vgSe42E1LoLNnAE1r0XfuJ1GW1IWzjeSpJYx+iRszH4adyVvpMHJPnL1fyEWUtzDBo0Zzxa9BYvOSp9TI/Og4lU413006P+Q6P1IXhXijSkICH783HsCP9g/Ye0ahbngkuQNf4klaHgtVtnWBxXMcyrsuPMdmnFNk2TOoGN81voma/fYb2k1P9scBk8JV9rWIcm0mAa1z1traFpJWB6/GlqVjrV77AWf7fqKdjmmIRH6suNk0Pezo++g15V9pIWWkweuVGPQ1QOzNgqxBhtr99hvaXLPvn1xJzZlV0JN69+TIVPDIXcf/Ws1JNNkJcGURrskpMNJ0k7WSFI8dIz8gjfqK/7Ru2RVSVOPnNvqkiO012XUhKPd2cg0w5pm3hvxRNSh5lfR7+qm0RoQcM15Be9erJLE3ryVhzNp6v8RzQPnEWdIhts/IcnKTiNOsCBAxanpRywkd+6b6Jh1FDI+CWzEnlhEbWlSHJBEg5RzUpIbXQiTJoK2d8Uiamkcri7anNuQtY026kgKyZqU8Fw8kPE4TVDIOReLqK6lRRdHsyTSoSBloD/gZS6YXG1kOw+4rmNffcWs9fO/QfRPD6P08SjPf5EmCSSNZNFomwmZRNICOti0m0kwU35rKXcUwXJHESx3FMFyRxEsdxTBckcRLHcUwbIGwB9aHr5qCDjt1QAAAABJRU5ErkJggg==" />
-                    </svg>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/advantage-tablet-2.svg">
+                        <img src="img/advantage-mobile-2.svg" alt="" class="advantages__svg">
+                    </picture>
                     <p class="advantages__descript2">Выпускается в виде порошка,<br> который нужно лишь залить<br>
                         кипятком
                         и
                         готово.</p>
                 </div>
                 <div class="advantages__blok3">
-                    <svg class="advantages__svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
-                        <image id="advantage-3.png" width="60" height="60"
-                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACmElEQVRoge2aS2gTQRyHf5vNpsm6eVRiNMamMUFbH4jgJQepaEX0Ivg6ingREcGTnrx5UtC75u5B8GJ9gAqCiL2IqBAPtWqKjdpYbZJttk13sys7QkGUmtQJDLPzXXZ2k/+P+XaHmckS6fSDvAMP4fOSLISwBxDCvCOEeUcI844Q5h0hzDtCeLlc2nUb5/MFUp3Usrg6/BCHNp4h5/uyx3Ft+BHWx7YumX544Cyu7Lm/WNcNqAkH5CAigV7STqxYB1UJIxPbTM4z0U0IKRrSkYElM/qjgwgHejGUPoIt8TzbwjTx+xQcHTzXlWwmhZutOWiBGBJqH/VsJoUdxybCO5J7qWczKVycHkXLsbB99RD1bCaFx368hGHqZAKjDTVhdxgqcg98kvzHZ9GeOBw4qDe/t5XVMOtoWgb8vgCppQk14XnLgKpEsLv/2G/XV4bWIK6m0FiooVR723aeYekI+TWkwjk2he+OF9CyLRzIncT+7AlyLaGmcSFfIEOzVCtiZr7Sdt5n/QNZnvr+sXZ3CjXhF18e48nELTK0M9FfG45YcBV5Sh+rRRReXewo75M+Ro5JLUOriwQ/zbA7765jtHyPbBq2JXai1pzGzeJlvKk86zjr62wJttNCPJSi2UX6s/Q3YxLPyyOkPdWYWJasizv83Xkh6Fep9o/ZX0vuTO2uxbJEdRCyK2yYdTIfyD6Fai6zwpZtwibCHnnCLg5sSJCoZtK9fZRYq+UwZ84CkCD/Zef2PzApfHDDqcW2vjBDNZtJ4bL+Hg2zStqlavvb0XZgUnhk/AZeTz3tSrZ4a8k7Qph3hDDvCGHe6YpwpTFJXrN2uktyv+/WufXdQvy5lHeEMO8IYd4RwrwjhHlHCPOOEOYdbwkD+AkF5L7RtUZhIwAAAABJRU5ErkJggg==" />
-                    </svg>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/advantage-tablet-3.svg">
+                        <img src="img/advantage-mobile-3.svg" alt="" class="advantages__svg">
+                    </picture>
                     <p class="advantages__descript3">Замените один-два приема<br> обычной еды на наше<br> функциональное
                         питание.
                     </p>
                 </div>
                 <div class="advantages__blok4">
-                    <svg class="advantages__svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
-                        <image id="advantage-4.png" width="60" height="60"
-                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAFy0lEQVRoge1aaWxUVRT+5k1L2ykt3UvpDISuNpAuU6CAghYN0RQiktQ/gtGAWooErCSi0UAwiIiK1ECQNIBxSSMYASFFhSAiNoViaS3QBbrv69gWpsss5hxmJp20to29Q+r0fcnL3Hffe9+939zzzj3nzCjSchaaMYkgTSaxkAVPAsiCnR2yYGeHLNjZIQt2dsiCnR2TTrCLI0jTtHsQF7R0XBx13eXYdeVFYXOyYtKt8EMrAAR4zECYbyyCPTVYPnstXCRXXKw+jpqu27jbWYTW+/UPYxqOMWkbueSKhaEpeFyzGmrvyCHXk2el2tr13XdwqeZ75NafhcE04LA5OWyFo/wSsWbu2whUhfL5gKkf5R0FLOzvvjbum+YWgFCvCET6xsNV6cZ9bfoGfFO8GyXt+Y6YlmMEPxP+ElZGvgoFFGjXN+Lniq+Q13AOfUb9sPe7KT2QNONpLA9bC3+PEO47XX4YOXePip4alPPWqHeIJHw2agNSItax2IvV3+FQwTZU6ophNBts95B5e7v5o6dfBzPMfK26qwSX607C3UWF2T5zEO2fCBdpCkoFr7RQwY+qV2J19Ovc/vbmHuTcPQaT2Tjkvj3JZ7FU8xwuVGfDYOofdMWM4tZcNvnYoMcQ4RsHXW8LarvKRE1R3LZEpvh8TAa3fyg7iMu1JzHTOxqhXuFjen7WtBhsX5INjXcUfq89xRwE4rSauQgIE7wqagOmKN3ZBH+p+BqBKjU2zfsMW5O+YBGjYUXEegSpNPz+E4iDuIiTuCeUYF/3YGinP8ntE6WZ/F7S+9nYU4mme9VovlczKkfWjXdxoSobx4p28jlxHC/Zz23ipjFEQIjgeSFPQVJIvCJ1XeXcpzf0IDN/MzKvbUa/sXdUDvLgJ0r2291LWxhtT8RNY0wYwY/4z+fPguZLdv0UQJDw8eBG8692Y4wXQgRbHVOl7i8hkxqMCgvnWJ3faBASWlLERGjXN/H+uj7uffQZ7+PA9a3/iW9j4sdwU6qQVfgeOvRNdmOMF0JjaROMcJdUiPRLGNGUyaFRdGUw9g97Pdw3Dh4uU+EqTcGAqU/kFMUIJodDAjyUnuju78ShgrdgNA0NOKzYnfuyRczwgo8U7oBSUjKXp+s02xgiIERw6/06qL0iEeIVhputuShs/m3E+61m+m8obr1iu0LWQmgTlD4KcVpVupv8KcqTDoaVk+JxERAi+IZlO1oQspxz4MFQuXqNmSchOBlzAhfZzomLOHmMlpGtZqwQIvh2+1V09jazh16iWWXrjwlIwgdPnEKiJQobCRRLr4vfiXTtXs6WCMRFnMR9uy1v4gg2mU34sTyL25QHUzmHoA1OZmcWG7RkVA7KiK42/IT8xvOo0t1iDuIiEDeNIQLCCgAKhYQt8z9HlJ+WK46f5qWj13APi9UrkdeQY1e2yVjwIBM6cP1NO+9LObSkUHLCkJF0kB1hWcef2H9tkzDBwrIls9mEI4Xboett5YmSKB/3QFypOz2kRkWelw5JUtpzwAxvNz9+ljiI62jRDmFiIboAQNFVUctlaKcvQ5Cnhgt4PQM6TgJIjBVkAflN59HYXQkzHoihBGGROgWvJXyIANUMdPW1Y9+1jVwiEgmH1LQoDHwlfhfCfWP5nPbQP+rP8B7d0FNhW3HywiFTZ2Nu4GIsDl2BAEvBj+LnwwXv2Ip9E14wLO908sxUpMZssesn89Qburnt4eLFKzsYVLw7V/ElvyKOgMN+eaDQMS74gXcm53W96QI6e1tYIIWLdFCb+sg70/tKoOqlj6BEYTg4pBBPXpYyHqpNk1gqBFRaojGqP0+1xMeURFjjaSoJbZ6fiWDPmXhjwUHsu5rOX4ZoOGSFX5izbVixhAFjHwuhY3DyQPH4J3lp/JMLFe/TtB/xNvW/EHzmThZqukqHiB0N9CXQytKz2bf22nl2UZD/TevskAU7O2TBzg5ZsLNDFuzskAU7O2TBTg0A/wCsdFXfY7j7hwAAAABJRU5ErkJggg==" />
-                    </svg>
-                    <p class="advantages__descript4">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/advantage-tablet-4.svg">
+                        <img src="img/advantage-mobile-4.svg" alt="" class="advantages__svg">
+                    </picture>
+                    <p class="advantages__descript4">Уже через месяц<br class="advantages__word-wrap1"> наслаждайтесь<br
+                            class="advantages__word-wrap2"> изменениями<br class="advantages__word-wrap1"> к лучшему<br
+                            class="advantages__word-wrap2"> вашего
                         питомца!</p>
                 </div>
             </div>
@@ -143,23 +139,31 @@
         <section class="before-after">
             <h2 class="before-after__heading">Живой пример</h2>
             <div class="before-after__wrap">
-                <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто<br> заменив свой обычный
-                    корм на
-                    Cat<br> Energy Slim. Отличный результат без<br> изнуряющих тренировок! при этом он не<br> менял
-                    своих привычек и
-                    по-прежнему<br> спит по 16 часов в день.</p>
-                <div class="before-after__weight-wrap">
-                    <div class="before-after__weight"></div>
-                    <div class="before-after__weight-time"></div>
+                <div class="before-after__wrapper">
+                    <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто<br
+                            class="before-after__word-wrap1"> заменив свой обычный
+                        корм на
+                        Cat<br class="before-after__word-wrap1"> Energy Slim.<br class="before-after__word-wrap2">
+                        Отличный
+                        результат без<br class="before-after__word-wrap1"> изнуряющих тренировок! При этом он не<br
+                            class="before-after__word-wrap1"> менял
+                        своих привычек и<br class="before-after__word-wrap2">
+                        по-прежнему<br class="before-after__word-wrap1"> спит по 16 часов в день.</p>
+                    <div class="before-after__wr">
+                        <div class="before-after__weight-wrap">
+                            <div class="before-after__weight"></div>
+                            <div class="before-after__weight-time"></div>
+                        </div>
+                        <p class="before-after__price">Затраты на питание:<br class="before-after__word-wrap"> 15 000
+                            руб
+                        </p>
+                    </div>
                 </div>
-                <p class="before-after__price">Затраты на питание: 15 000 руб</p>
-                <img src="/img/before-mobile.png" alt="" class="before-after__img-before">
-                <img src="/img/after-mobile.png" alt="" class="before-after__img-after">
                 <div class="before-after__scale-wrap">
                     <span class="before-after__before">Было</span>
                     <div class="before-after__scale">
-                        <input type="checkbox" class="before-after__input" id="toggle" value="1" name="scale">
-                        <label for="toggle" class="before-after__label"></label>
+                        <input type="range" min="1" max="100" value="50" class="before-after__input" id="toggle"
+                            value="1" name="scale">
                     </div>
                     <span class="before-after__after">Стало</span>
                 </div>
@@ -172,7 +176,8 @@
             <section class="contacts contacts--page-fr">
                 <div class="contacts__wrap contacts__wrap--page-fr">
                     <h3 class="contacts__heading">Приглашаем<br> к сотрудничеству<br> дилеров!</h3>
-                    <P class="contacts__value">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</P>
+                    <P class="contacts__value">ул. Большая<br class="contacts__word-wrap"> Конюшенная, д. 19/8<br
+                            class="contacts__word-wrap"> Санкт-Петербург</P>
                 </div>
             </section>
             <div class="page-footer__item-wrap">
@@ -181,56 +186,91 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6152511412683!2d30.32116901593964!3d59.938526269069975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1506962375066"
                         width="320" height="455" style="border:0" allowfullscreen=""></iframe>
                 </div>
-                <div class="page-footer__item footer-logo">
-                    <a href="index.html" class="footer-logo__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128"
-                            height="24" viewBox="0 0 128 24">
-                            <image id="footer-logo.svg" width="128" height="24"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAYCAYAAAAyC/XlAAAHpklEQVRogc1ae8yWYxj/+SRNTheVs2Wsg6kvZAgTlvOhOQxRIoc5bZmQ8YeGOQ0Zwx8Oy+Y001HhM8cVq2UqSkYlSwrzE5Fj2dV3Pbm67vt5v/er9+X9bU/dz3Vf9+H97uu+7uv+PdcWMIhIFwBXAzgJwP4AtgPwN4BvAcwEMA7AJJLrUAIReRhAn0ztEJLL3Vh3ADgy0SrHrSSnl9a29jkWQL+kYmOMJDlHRFRP9RUjSC7K9DccwHB7PY/kCpO/AmDbpOd/sZrkqaY7GsCJsR7ATwAWAniT5Iykh43nMVDHB3CAjfsLgM8B6DzGk1zrdO8F0M1eby/5XV0B3GevazqYsD+Aqa5xgS0B7AZgsD0TReQckn8lM23FEAA7JdLWhVnu3vXHHJ1olaNLac3GY7TV547u/0L3KgDXJ5pAd6fTycnVcHdItP/FKlfu1cacxojIbABDSS70FSLSBOBJZ4QeAwBcBOBdETmJ5JqimclhBnZ30hI4xemMbxKRjgCezyx+DmoEozNynfBeJYuvaE4k9cVKAHMzz+rMqBeLyDaJtDosyozxcUnLrwE8ZIv6OoA/Ta6b7y0RiV5lVFh8HasFwDwnU+Ma495fduUzkhmk8onqAc4GsF9QUjczBcC+AA4JdSNF5D6Svwd5pUXum0jqi8dJ3lblCGKe64mkpm1cSvKdKnW/IDlyw6Ai+vd617yJetkRZiBa1ylstOtJPuDanmLro0f4lSIyhqSu2ZsAaL/pUBHZjeQ3rt3WAAbZ6x8AJqubOTOZKnATyfMBHA5gfqjbGcCBSYvK5280juusD30uS7Rbd8s+7mlJNGqLa+vcfwKS6i0ec/JBrtxsiwiLwR707UnqcT3LXre1dVK5epVJJlfjOD2MexyAzlZuIbmqqWThZlqHGgTmLLxnIkkX2aOHWV/xA5ZoMKaP7oxEG/iL5Jfu+TXRqC36ishRdR4jhzlO1t2VvcecVxJ4+wCvlyuPd+XBoc2prjxB/1ED2CPpGvixpFxAEkllA9jSbhaNjKv/h7n5Y9THAD4eW5G0agVd2a9Hi90yFMeKyPZodf/eI2gQPxFmAD7ChVPIlbOwACbGEXPDeyUDaQScJSK7/8fz6OzKv7myv2X8nbRqxVIXeH5XCC02m2yvHe1aD/P0xWbX6+cPMANoCysyke53oU0fO3MKrM0cHY1qAO/Z/xoQX5HU1hf+2PnMlTu2NSpJDcT72fN4qJ7oysUx4KP/DcdEh6TndCDtPA4QEeOIZeEH4X+4CVSLjwBofHIogMtF5E6Sf9RzQHPHevu6xIlrGehOs5ucepiT7ap/mtWt9QbSpgFUibi4i0OQgoxOPTFYRLqH/keR/L5kzEfNAHbVo8B4kWow2hjDAt+THFXSrr+IzDGiqIeNVUCZvaeTFpsIJYaMsTwXgMYAFwI4yHp7h+S3Rc+1MoDoAdQAlgRZl3gvrSOaM0eO8gJlBvAigPuNcbymHQZwQnhfagRODp0zc4Lt1qvqcNOZYAaguMfJPVm0+QZglGXk/5fYH2NtiDPUC/wXBrAyEz2XunUNnETkKQA3Ks0qIjmeI4dFgV1cntEpsNjIG8UwF7mPJbk00c7Avgu8ndZgHMlIGU+1wLKTo9LXhfigJh5gvxDNKhbrOSoiGgvs7eTNRoPWG+1hAgtonHODBbNKDH2VaKRoDxP4ccEEiohS5kNNrl7kjUR7M0FytYhMC0TfDP9RDlXeAtpCzq0V5//iIG/UQHA9OWXuWHF+he8atYBf8OPb0d8XxqJeV+UxNT68vxQV2jQAEblNRNaFZ6RTyRnAAAuOIseQ+1TcSCioWZ33BXWcl4/4+1TLP5BcRlKPjLFV3hqmBH4h8TS18AA5KvkBi2oPC/L9RWSrRLtx8KoLXuvmAUiuDDTwoKBSRv60d5yfAtu4Juo02X0xwi9SjpTwE8x5gDJ0aGRK2JIrHksq6oNKx4DPKShLPtkxkWwCmjLnNEICRm6g9TSiiOiXwT1D3TL7zKnP7KRlA8cBhqfDrqkXfDB8vN2mCnzpyl1Lxo/U+yZBB/0g03A9a2SMVe4rWZGUkFvM+0kO1Cfj2tDo3wSMLHoxqag9pjuX3CUcpR+6cnPJsXlsItkEqAE8m2l2s4jMsFyAA0LdEpcjkDv/N+QPkPzR7uQejR4IwpjBusI+2vgr5AZSieR8d5PSD0M+6NaNqd8setdifh1Ivicib2R264BEuxV3uUTE3G7+NLwvALCLe895jVrjPEv8jNDk0k8SaQDJmSLyUUnii8cdIhLZxV9IVnuDaHFf6zQOuMv37ejhe0XkYtt8e9kmUgPS33Jw0ms7UBBBF9lk4m6PeCakTsU/8s96VQkyneQx7n1XEenm+eg6oGdJ0srYRFKORyx/rxKOyNStSiTl8Fe5I0Sks6V2wbKwB7oEzt5h14+ygHrzDUD5ecsMHmbnf3/btessJel9XXiSr4X2s8J1JseeTbMPEh7bW78wynZcqC/j7CthToW6AkVyix+zSK2KeMEygPWY9HSvnt0V08JdWWnXIqDbKOtXQXKBiNzibloaVK83AMsCGi4iyulrvqBuTmVc9Xh4iOQkEdEED01orZQy/5zpxLkBAP4BWWZuNg4Jr20AAAAASUVORK5CYII=" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="page-footer__item social">
-                    <a class="social__item social__item--vk" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22"
-                            height="12" viewBox="0 0 22 12">
-                            <image id="m-vk.svg" width="22" height="12"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABtElEQVQ4jW3TS4iPYRQG8N9cUiQrl4UkFIWURiFFuZRcYkFWNkN/lzRN2SELl5QkidgIybgUK0IW2GChXJJoFgpJQ6MmlwxKb56Pj+apf/2/c973Oed9znOaGo3GKsxGi9/owSF8wUGsxfDkfuAeVqI3sXJ/qr8YgrutOIeHeIuvWIYx2IrVGIb5+Iih6MJCXMQ0nMeVGvEIdBbiq/iGNUnMw00cwAS8wmDcSr43XRXswqXaXSnYV4h3pONZuI87uIHDWIp3GOlffMJiLMGUWmZ9YjOa8RQno2tzDnSk880YhP7a5aY89zT2oDvxMqej2IDnFdH2PLsj3y9TvXQ9KcUrlOEewSPsTWwULqe5syXQmsT7kJ6I5t0ZSk8G+aRGvBGLcAo/E9sUjm3VoZa2trbqf+lqOho4g+/p/PF/+hZ3PIj16vJ04nPs+EfTCu2Z+IVoOxDGxaLttVxxzArsxr6BiPvi0cm4jYkDEO/E+OhcaVxwHQuwpfwqjet4g5lxyrMM5RpeZBvnxA3lXFmM0TiWXSgLdhz7ByIu+IDlmIt1cc3YDLvoXp7+OkUKUfF/hX50/QIg52g9AJAoQgAAAABJRU5ErkJggg==" />
-                        </svg>
-                        <span class="visually-hidden">Vk</span>
-                    </a>
-                    <a class="social__item social__item--instagram" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
-                            height="16" viewBox="0 0 16 16">
-                            <image id="m-insta.svg" width="16" height="16"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABN0lEQVQ4jZXTzSpFYRQG4IcOhZGplPyMzBm4BMUFoAzoDCUGrgExMCQjkqFDbsHANSg/yVjkTGk569Rp74289fV9e/W+62+v1VWv12EUO5hFv9/RxDW2cN+d4lu8YQaDf5zgvKdmtJaRL7Hya9wW+vCR3OPQ1jLtmRK1haG8X/I+wCom831Ty5ofC8I57GEiv++wiQv04gk9oe0uxWyJz7GLgTy7aQv+cpbxjVpJzj7WcdRha78jq6tOcjGDYYzhpOS2ZRvv6EulgzY+S5YfUHTwjAcsVdAXY3A6/sg3qnqwgbN8n+a9lL9toUiuctBIYjTsMG33aWtUOYjZHsFrwUmcaGq7tCJC04wexGKs/dCjEFaJA6G5jgxiq2IxYrajzuJUVkUO8TymwkHUN43tmO1/rPMUHr4Afsg/6brwmNYAAAAASUVORK5CYII=" />
-                        </svg>
-                        <span class="visually-hidden">Instagram</span>
-                    </a>
-                    <a class="social__item social__item--facebook" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10"
-                            height="19" viewBox="0 0 10 19">
-                            <image id="m-fb.svg" width="10" height="19"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAA2klEQVQokdXSPUqDQRCH8V+CRJDgR6FoCuMN1F7EA6gQm5zAt/IIHsDO3MhCSyF+FLYKWtgJdiIYFmZgAxJs/Te7s/PszOzstJqmUWkT5zjCeu1oV/s+brGEE6xiBdvFOVeBF7jG0LSWa7CFYxxWyCUGySTYwwKewp7HGU7xnOABFgP4iXUtfB8ZvhhXeMMLunjHV9gjdLCRqfcyRajAW7Hfwbhuz0xlxBt8R+TXqPkhfJ2scTcOxtXFdnzAPj4TvJuR8jFf/uca/yNY+lfGqszklOp5LLr/NRwm7+kfHP7f0OcAAAAASUVORK5CYII=" />
-                        </svg>
-                        <span class="visually-hidden">Facebook</span>
-                    </a>
-                </div>
-                <div class="page-footer__item copyright">
-                    <p class="copyright__text">
-                        HTML Academy
-                    </p>
-                    <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27"
-                            height="34" viewBox="0 0 27 34">
-                            <image id="htmlacademy.svg" width="27" height="34"
-                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAAClklEQVRIia1W3XnaQBAc++M9dBDcAa4gpALbHVgvvFpUAKoAXAG4AkgFViqADixXEKUC57tkloxWd5LIl3lCx+3Pzc3e7tV8PodgDGDKzym/PwOYcG2GNkquVADeAdQATlw78fs3RgBe6WzScjMMsQQ8QiLVKLHZZ/fTDLhWip0l+inCCnTPSBa+Ood9KHv+10QCe9BgQ4wvRSP5639w8AjgDcB9658eXBJsSjq2pGYv4vpvwcYMcKQoCgA3ADb8DqdcOUFE0Rcsp7NH3ukNHYd7WAC45fpS9iWRCjbjSdYsgwdRq+LE9Qfu25LaactjJNjYGRTM/tCybOLAUxe0O9JPg1oNtkpQVrdcp0WxYnI7UW0eC7bsoUyxFVV6BLtMfKxjwcqBlAV8Z+ZHniYG82fPXiPYjLUTvdwIFnRkSvRvrJXF2Z8G2zkVdtXNF+6xEgBFtZekX+mjMKPQzz7sNzeumU1NR7tWqD9P1R2pDPue+ernsmdH+/D/hz8ZhOeM36m6eaI4lMrc+cm8klNFfcfjb4RarZsXJtBHdwOpYBA6M2aqdXMQeocKKhnsWV6DLakyIYQkfjjaBmGU2LQkPQsqLxch2P8Xo+tkE7mnjDJf8j67Xpead9pCKthBetY9qfvGk3ZNYhvaxcqlEcyrqpaeZfJ+klMqrGQWkYf77FeDHRPNz3pWRsO9nKyWR/fUsvz7fp6DFTSadBQxSI1R20eZn1eC/+JaepC99l3vo1F71UHZWuYV0G/wvzIaq0gfy4fMFY4ybZaVjAwVImospb3XkckqBv+c1TKBNQbflPS1vcPdgVHr5xVw/22qoaaCwbV3U5pRtXUUq2KTBT9kSPU1FE4UghhlOj924pLx20vdl0I3APwCkLnOnTFCCwMAAAAASUVORK5CYII=" />
-                        </svg>
-                    </a>
+                <div class="page-footer__item-wrapper">
+                    <div class="page-footer__item footer-logo">
+                        <a href="index.html" class="footer-logo__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="128" height="24" viewBox="0 0 128 24">
+                                <image id="footer-logo.svg" width="128" height="24"
+                                    xlink:href="data:img/png;base64,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" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="page-footer__item social">
+                        <a class="social__item social__item--vk" href="#">
+                            <svg class="social__img social__img--vk" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+		c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+		c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+		c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+		C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+		c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+		c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+		c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+		c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+		c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+		c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+		c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+		c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+		c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+		C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+		C18.4,10.9,18.5,10.9,18.6,10.9z" />
+                                </g>
+                            </svg>
+                            <span class="visually-hidden">Vk</span>
+                        </a>
+                        <a class="social__item social__item--instagram" href="#">
+                            <svg class="social__img social__img--insta" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;"
+                                xml:space="preserve">
+                                <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+	 M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z" />
+                                <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+	c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z" />
+                                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
+                            </svg>
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                        <a class="social__item social__item--facebook" href="#">
+                            <svg class="social__img social__img--fb" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 13.5 27.8" style="enable-background:new 0 0 13.5 27.8;"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M9.5,27.8H2.7V14.8H0V8.5h2.6C2.4,5.6,2.9,3.5,4.1,2c1-1.2,2.6-1.9,4.6-2l4.8,0v6.2H9.8C9.6,6.5,9.5,7.2,9.5,8.5h4v6.4h-4
+		V27.8z M4.2,26.3H8V13.3h4V10H8l0-0.7c0-2,0-3.8,1-4.5l0.2-0.1H12V1.5H8.8C7.2,1.6,6.1,2.1,5.3,3c-1,1.2-1.4,3.3-1.1,6.1L4.3,10
+		H1.5v3.4h2.7V26.3z" />
+                                </g>
+                            </svg>
+                            <span class="visually-hidden">Facebook</span>
+                        </a>
+                    </div>
+                    <div class="page-footer__item copyright">
+                        <p class="copyright__text">
+                            HTML Academy
+                        </p>
+                        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" x="0px" y="0px"
+                                viewBox="0 0 26.9 34.1" style="enable-background:new 0 0 26.9 34.1;"
+                                xml:space="preserve">
+                                <path d="M13.6,0l-0.1,0L0,1.4v24.7l13.5,8l13.4-8l0,0V1.4L13.6,0z M25,12.1L13.5,5.3l0-0.1l-0.1,0l-0.1-0.1v0.1L1.9,12.1v-9
+	l11.5-1.2L25,3.1L25,12.1L25,12.1z M13.4,6.8l11.5,6.7l-4.5,2.6l-7.1-4.2l0,1.4l5.9,3.5l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5
+	l-3-1.8l0,1.4l1.9,1.1l-1.8,1.1L2,13.6L13.4,6.8z M1.9,15.1l11.4,6.8l0,1l-7.9-4.7l0,1.4l8,4.8l0,1.1l-8-4.7l0,1.4l8,4.8l0,0
+	l8.1-4.9l0-5.2l3.4-2v10l-11.5,6.9L1.9,25V15.1z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

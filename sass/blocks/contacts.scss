@@ -38,6 +38,54 @@
     line-height: 20px;
 }
 
-iframe {
-    height: 360px;
+.contacts__word-wrap {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .contacts {
+      height: 200px;
+    }
+
+    .contacts__wrap {
+        margin: 0;
+        padding-top: 67px;
+    }
+
+    .contacts__heading {
+        font-size: 20px;
+        padding-left: 40px;
+        line-height: 25px;
+        margin-right: 313px;
+    }
+
+    .contacts__value {
+        font-size: 16px;
+        line-height: 25px;
+        text-align: end;
+    }
+
+    .contacts__word-wrap {
+        display: block;
+    }
+}
+
+@media (min-width: 1300px) {
+    .contacts--page-fr {
+        position: absolute;
+        width: 570px;
+        height: 190px;
+        top: 97px;
+        margin-left: 39px;
+    }
+
+    .contacts__heading {
+        margin-right: 48px;
+        width: 199px;
+        padding-left: 77px;
+    }
+
+    .contacts__value {
+        text-align: left;
+    }
 }

@@ -8,3 +8,28 @@
     padding-top: 37px;
     padding-left: 20px;
 }
+
+@media (min-width: 768px) {
+
+    .intro {
+        margin-bottom: 55px;
+    }
+
+    .intro__title  {
+        font-size: 60px;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 78px;
+        letter-spacing: -2px;    
+    }
+}
+
+@media (min-width: 1440px) {
+    .intro__title  {
+        padding-top: 90px;
+    }
+
+    .intro__heading--inner {
+        padding-left: 40px;
+    }
+  }

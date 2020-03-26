@@ -1,3 +1,11 @@
+.burger-menu {
+    display: none;
+}
+
+.burger-menu--closed {
+    display: block;
+}
+
 .burger-menu__list {
     padding: 0;
     margin: 0;
@@ -13,4 +21,96 @@
 
 .menu-list__link {
     color: black;
+
+    &:hover,
+    &:focus {
+        opacity: 0.6;
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
 }
+
+
+@media (min-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu__list {
+        display: flex;
+        font-size: 17px;
+        height: 63px;
+        width: 440px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .menu-list__item {
+        border-top: none;
+        padding: 0;
+    }
+  }
+
+  .menu-list__item a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: rgb(104, 183, 56);
+    transition: 0.4s ease-in-out;
+}
+
+.menu-list__item a:active::after {
+    width: 100%;
+}
+
+  @media (min-width: 1440px) {
+    .burger-menu__list {
+        width: 481px;
+        font-size: 20px;
+        height: 95px;
+        justify-content: space-between;
+        padding-right: 38px;
+    }
+
+    .menu-list__link {
+        position: relative;
+        color: white;
+    
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+        }
+    
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    .menu-list__item a::after {
+        background-color: white;
+    }
+
+    .menu-list__item-bl a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        background-color: rgb(104, 183, 56);
+        transition: 0.4s ease-in-out;
+    }
+    
+    .menu-list__item-bl a:active::after {
+        width: 100%;
+    }
+
+    .menu-list__link-bl {
+        color: black;
+    }
+  }

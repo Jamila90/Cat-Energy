@@ -14,6 +14,7 @@ body {
   }
   
   a {
+    position: relative;
     text-decoration: none;
   }
 
@@ -28,14 +29,24 @@ img {
 
   
 @media (min-width: 768px) {
+  body {
+    background-image: none;
+  }
   .main-content {
     width: 768px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1440px) {
+  body {
+    background-image: url(/img/index-background-desktop.jpg.png);
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+  } 
   .main-content {
-    width: 1150px;
+    width: 1300px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
